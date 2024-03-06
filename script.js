@@ -1,7 +1,7 @@
 //your JS code here. If required.
 let elem = document.getElementById("counter");
-alert(elem.innerHTML)
+alert(parseInt(elem.innerHTML))
 function increment() {
-  elem.innerHTML++;
+  parseInt(elem.innerHTML++);
   alert(elem.innerHTML);
 }
