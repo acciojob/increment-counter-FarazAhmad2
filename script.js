@@ -1,9 +1,23 @@
 //your JS code here. If required.
- let elem = document.getElementById("counter");
-    // alert(parseInt(elem.innerHTML));
+ const counterElement = document.getElementById('counter');
+    const incrementBtn = document.getElementById('incrementBtn');
 
-    function increment() {
-        let currentValue = parseInt(elem.innerHTML);
-        currentValue++;
-        elem.innerHTML = currentValue; // Update innerHTML with the incremented value
-        alert(currentValue);
+    // Counter variable to store the value
+    let counterValue = 0;
+
+    // Function to update the counter text
+    function updateCounter() {
+      counterElement.textContent = counterValue;
+    }
+
+    // Event listener for the button click
+    incrementBtn.addEventListener('click', function() {
+      // Display the current counter value in an alert
+      alert(counterValue);
+      
+      // Increment the counter value
+      counterValue++;
+      
+      // Update the counter text
+      updateCounter();
+    });
