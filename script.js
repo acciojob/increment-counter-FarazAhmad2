@@ -3,5 +3,5 @@ let elem = document.getElementById("counter");
 alert(parseInt(elem.innerHTML))
 function increment() {
   parseInt(elem.innerHTML++);
-  alert(elem.innerHTML);
+  alert(parseInt(elem.innerHTML));
 }
