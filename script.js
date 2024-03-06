@@ -1,6 +1,7 @@
 //your JS code here. If required.
-let elem = document.getElementById("count");
-
+let elem = document.getElementById("counter");
+alert(elem.innerHTML)
 function increment() {
-  return elem.innerHTML++;
+  elem.innerHTML++;
+  alert(elem.innerHTML);
 }
